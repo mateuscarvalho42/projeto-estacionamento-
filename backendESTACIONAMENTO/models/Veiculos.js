@@ -7,15 +7,19 @@ const Veiculos = database.define('Veiculo', {
         autoIncrement: true,
         type: DataTypes.INTEGER
     },
+    placa: {
+        type: DataTypes.STRING,
+        unique: true
+    },
     modelo: {
         type: DataTypes.STRING
     },
     cor: {
         type: DataTypes.STRING
     },
-    placa: {
+    nome: {
         type: DataTypes.STRING
-    }
+    },
 })
 
 export { Veiculos }
