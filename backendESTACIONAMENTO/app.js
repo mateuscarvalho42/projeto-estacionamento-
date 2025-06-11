@@ -1,5 +1,5 @@
 import express from 'express'
-import 'dontenv/config'
+import 'dotenv/config'
 import { router } from './rotas/usuario.js'
 import { routerVeiculos } from './rotas/veiculos.js'
 import { database } from './database.js'

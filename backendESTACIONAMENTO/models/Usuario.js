@@ -10,7 +10,7 @@ const Usuario = database.define('Usuario', {
     nome: {
         type: DataTypes.STRING
     },
-    email: {
+    cpf: {
         type: DataTypes.STRING,
         unique: true
     },
