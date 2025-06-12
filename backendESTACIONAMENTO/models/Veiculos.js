@@ -1,7 +1,7 @@
 import { database } from "../database.js";
 import { DataTypes } from "sequelize";
 
-const Veiculos = database.define('Veiculo', {
+const Veiculos = database.define('Veiculos', {
     veiculo_id: {
         primaryKey: true,
         autoIncrement: true,

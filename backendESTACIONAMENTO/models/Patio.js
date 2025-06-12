@@ -1,13 +1,18 @@
 import { database } from "../database.js";
 import { DataTypes } from "sequelize";
 
-const patio = database.define('patio', {
+const Patio = database.define('Patio', {
+    patio_id: {
+        primaryKey: true,
+        autoIncrement: true,
+        type: DataTypes.INTEGER
+    },
     numero_vaga: {
-        type: DataTypes.NUMBER
+        type: DataTypes.INTEGER
     },
     status_ocupado: {
         type: DataTypes.BOOLEAN
     }
 })
 
-export { patio }
+export { Patio }

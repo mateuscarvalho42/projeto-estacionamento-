@@ -1,4 +1,4 @@
-import { Veiculos } from '../models/Veiculos.js'
+import { Veiculos } from "../models/Veiculos.js"
 
 const registrarVeiculo = async (req, res) => {
         const veiculo_id = req.veiculo_id
@@ -22,4 +22,4 @@ const registrarVeiculo = async (req, res) => {
           res.status(201).send({ sucesso: 'Veículo registrado com sucesso.', veiculo: novoVeiculo });
         }
 
-export {registrarVeiculo}
+export { registrarVeiculo }

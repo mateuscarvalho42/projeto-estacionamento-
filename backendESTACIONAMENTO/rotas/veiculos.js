@@ -1,7 +1,9 @@
 import express from 'express'
-import {registrarVeiculo} from '../controllers/veiculos.js'
-import {validarToken} from '../middlewares/usuario.js'
+import { registrarVeiculo } from '../controllers/veiculos.js'
+import { validarToken } from '../middlewares/usuario.js'
 
-const routerVeiculo = express.Router()
+const routerVeiculos = express.Router()
 
-routerVeiculo.post('/veiculos', validarToken, registrarVeiculo)
+routerVeiculos.post('/veiculos', validarToken, registrarVeiculo)
+
+export { routerVeiculos }
