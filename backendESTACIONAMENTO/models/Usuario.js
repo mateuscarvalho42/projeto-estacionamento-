@@ -5,20 +5,25 @@ const Usuario = database.define('Usuario', {
     usuario_id: {
         primaryKey: true,
         autoIncrement: true,
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        allowNull: false
     },
     nome: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false
     },
     cpf: {
         type: DataTypes.STRING,
-        unique: true
+        unique: true,
+        allowNull: false
     },
     senha: {
         type: DataTypes.STRING,
+        allowNull: false
     },
     categoria_usuario: {
-        type: DataTypes.STRING 
+        type: DataTypes.STRING ,
+        allowNull: false
     }
 })
 
