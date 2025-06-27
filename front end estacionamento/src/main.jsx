@@ -5,8 +5,11 @@ import './index.css'
 // const App = veiculos
 // import cadastro from './cadastro.jsx' 
 // const App = cadastro
-import acesso from './acesso.jsx'
-const App = acesso
+// import acesso from './acesso.jsx'
+// const App = acesso
+import vagas from './vagas.jsx'
+const App = vagas
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

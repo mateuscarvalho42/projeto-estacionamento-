@@ -22,7 +22,7 @@ function cadastro(){
     <header>
         <title>Tela de Cadastro</title>
     </header>
-    <div class="login">
+    <div class="login"> 
     {/* <img src="" className='logo' alt="sesi logo" /> */}
     <h2>Registrar</h2>
       {/* nome: {nome} */}
